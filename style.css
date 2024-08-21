@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 85%;
+}
+.logo{
+    margin: left 30px;
+}
+button{
+    color: white;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 20px;
+
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: rgb(247, 244, 244);
+
+}
+.sidebar{
+    background:linear-gradient(#00545d,#000729);
+    border-left: 2px solid white;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 50px;
+    top: 0;
+
+}
+.sidebar img{
+    height: 20px;
+    width: 20px;
+   
+}
+.share-link{
+    position: absolute;
+    bottom: 10px;
+}
+.soical-link{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.menu{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.share-link img,.soical-link img{
+    margin-left: 10px;
+}
+.bubbles{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.bubbles img{
+    width: 50px;
+    animation: bubbles 7s linear infinite;
+
+}
+@keyframes bubbles {
+    0%{
+      opacity: 0;
+      transform: translateY(0)
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: .5;
+    }
+    100%{opacity: 0;
+    transform: translateY(-100vh);}
+
+}
+.bubbles img:nth-child(1){
+    
+    animation-delay: .5s;
+}
+.bubbles img:nth-child(2){
+
+    width: 30px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    width: 30px;
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(4){
+    width: 35px;
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(5){
+    width: 40px;
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    width: 50px;
+    animation-delay: 3.5s;
+}
+@media screen and (max-width:450px)
+{
+    .top{
+        background-image: url('https://i.pinimg.com/originals/4d/33/22/4d3322844e1e983096e73dff49950b2f.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: absolute;
+    
+    }
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+        color:gray;
+    
+    }
+    .sidebar{
+        background:linear-gradient(#00545d,#000729);
+        border-left: 2px solid white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        width: 100%;
+        top: auto;
+    
+    }
+}
+
+
+@media screen and(min-width:451px) and(max-width:800)
+{
+    
+}
